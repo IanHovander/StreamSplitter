@@ -8,7 +8,7 @@ Each line: what happened, then what to do.
   uploads a day. A backup computer can record with publishing off.
 - **A running program keeps its old code.** After an update, the recording and the Slack listener ran the old
   version until they were restarted, and fixes seemed not to work. Restart both after every update.
-- **Keep the folder out of cloud-synced places, on a short path.** A synced folder uploads 700 MB of packages. A
+- **Keep the folder out of cloud-synced places, on a short path.** A synced folder uploads 1 GB of packages. A
   path longer than about 150 characters stopped the text reader from loading on Windows.
 - **Recording needs a disk that keeps up.** A slow hard disk (the shingled kind) fell behind while chunks were
   written and read at once. Put `work_root` on an SSD; clips can stay on the big disk (`data_root`).

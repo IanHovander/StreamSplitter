@@ -32,7 +32,7 @@ wiki. Checked 2026-11-04 (Google Drive 2026-11-05); "not measured" means nobody 
 - **One event at a time per computer.** Start from Slack refuses a second event while one records (`stop` first).
 - **Processor.** The test PC (16-core desktop) handles each 20 s piece of stream in 3-7 s. A slower laptop must
   stay under 20 s, or the clips fall behind. Low-end laptops and RAM use are not measured. No graphics card needed.
-- **Install.** `run.bat` / `sh run.sh` installs everything inside its folder (about 0.7 GB, no admin rights; not a
+- **Install.** `run.bat` / `sh run.sh` installs everything inside its folder (about 1 GB, no admin rights; not a
   OneDrive or Google Drive folder). On a network that blocks downloads, install at home: `run.bat --install-only`.
 
 ## Internet
@@ -54,7 +54,7 @@ wiki. Checked 2026-11-04 (Google Drive 2026-11-05); "not measured" means nobody 
 
 | What | Size | How estimated |
 |---|---|---|
-| Software | under 1 GB | the test install is 0.64 GB |
+| Software | about 1 GB | a fresh install measured 0.9 GB before ffmpeg (2026-11-10) |
 | Raw recording (last 28 h only) | 2-3 GB per stream hour: about 40 GB after two 10-11 h days, 76 GB if the stream never stops | 6 Mbit/s (the highest measured) = 2.7 GB/h; written only while live |
 | Clips (match + score version) | 180-260 MB per match, 20-25 GB per 100-match weekend | measured pairs: 90 + 94 MB, 127 + 132 MB; never deleted automatically |
 

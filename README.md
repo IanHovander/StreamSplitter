@@ -30,8 +30,8 @@ still type the logins and keys yourself; the setup never shows them to the assis
 
 1. Download this repository (the green **Code** button, *Download ZIP*) into a short path that no cloud service
    syncs, for example `C:\StreamSplitter`.
-2. Windows: double-click `run.bat`. macOS/Linux: `sh run.sh`. It installs everything inside the folder (about
-   5 minutes, 700 MB) and starts the setup.
+2. Windows: double-click `run.bat` (in PowerShell: `.\run.bat`). macOS/Linux: `sh run.sh`. It installs
+   everything inside the folder (a few minutes, about 1 GB) and starts the setup.
 3. Answer the questions: about 15 minutes, 30 for the first person on a team.
 
 The one-page guide: [START-HERE.md](START-HERE.md).

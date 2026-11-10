@@ -24,7 +24,7 @@ cannot load some of StreamSplitter's parts, and the setup says so.
 
 ## 2. Start the setup
 
-- **Windows:** double-click `run.bat`. If Windows says "Windows protected your PC", click **More info**, then **Run
+- **Windows:** double-click `run.bat` (in a PowerShell window: `.\run.bat`). If Windows says "Windows protected your PC", click **More info**, then **Run
   anyway**.
 - **Mac / Linux:** open a terminal in the folder and type `sh run.sh`. (macOS is untested.)
 

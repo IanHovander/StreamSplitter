@@ -12,7 +12,7 @@ Put the folder on a short path that no cloud service syncs, such as `C:\StreamSp
 Drive, Dropbox, or a synced Documents or Desktop). The installed packages would sync too, and a path longer than
 about 150 characters can stop the text reader (OCR) from loading on Windows.
 
-- **Windows:** double-click `run.bat`. If Windows says "Windows protected your PC", click *More info*, then *Run
+- **Windows:** double-click `run.bat` (in a PowerShell window: `.\run.bat`). If Windows says "Windows protected your PC", click *More info*, then *Run
   anyway*.
 - **macOS / Linux:** `sh run.sh` in a terminal in that folder.
 
@@ -20,7 +20,7 @@ The first run installs uv (astral.sh's installer, into `.tools\uv` unless uv is 
 Python 3.12 and the light packages into `.venv` (under a minute), then starts the setup. While the setup asks its
 questions, the rest downloads in the background: the detection packages (~150 MB), ffmpeg and ffprobe if the
 computer has none (checked against their published SHA-256), and Deno, the JavaScript runtime yt-dlp recommends
-for YouTube. About 700 MB and 5 minutes in all. Nothing outside the folder is changed (no system settings, no
+for YouTube. About 1 GB and a few minutes in all. Nothing outside the folder is changed (no system settings, no
 PATH); delete the folder to remove everything.
 
 `run.bat --install-only` does only this part and asks nothing: for a laptop prepared at home, or an AI agent.

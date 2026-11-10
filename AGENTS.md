@@ -14,14 +14,15 @@ events, Linux in tests, macOS not at all.
 ```
 git clone https://github.com/IanHovander/StreamSplitter C:\StreamSplitter
 cd C:\StreamSplitter
-run.bat --install-only
+.\run.bat --install-only
 ```
 
-macOS/Linux: `sh run.sh --install-only`. No git: unzip
+A bare `run.bat` is not found in PowerShell or in most agent shells: type `.\run.bat` (Git Bash: `./run.bat`).
+The docs write `run.bat` for short. macOS/Linux: `sh run.sh --install-only`. No git: unzip
 `https://github.com/IanHovander/StreamSplitter/archive/refs/heads/main.zip`. Use a short path that no cloud
-service syncs (not Documents, Desktop, OneDrive, Dropbox). It takes about 5 minutes and 700 MB: uv, Python 3.12,
-the packages, ffmpeg and Deno, all inside the folder. Check: `.venv\Scripts\streamsplitter`
-(`.venv/bin/streamsplitter`) prints a settings summary.
+service syncs (not Documents, Desktop, OneDrive, Dropbox). It takes a few minutes and about 1 GB: uv, Python
+3.12, the packages, ffmpeg and Deno, all inside the folder. Check: `.venv\Scripts\streamsplitter`
+(`.venv/bin/streamsplitter`) prints its version and "not set up yet".
 
 ## Set up: the person runs it, you guide
 
