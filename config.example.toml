@@ -1,0 +1,33 @@
+# You normally do not need this file: the setup (run.bat / sh run.sh) writes config.toml for you.
+# For a hand setup, copy it to config.toml (never shared or committed) and edit. Keys and tokens never go here: the
+# setup keeps them in the computer's password store.
+
+# Where recordings, chunks and clips go (default: a StreamSplitterData folder in your home folder). Needs ~100 GB
+# free for an event (28 h of raw stream at 1080p, plus the clips).
+# data_root = "D:/StreamSplitterData"
+
+# Optional: where the recorded chunks go while they are being worked on (default: data_root). Use an SSD if the
+# data_root is a hard disk.
+# work_root = "C:/StreamSplitterWork"
+
+# The Blue Alliance read key, when the setup did not store one: a file holding it (the TBA_API_KEY environment
+# variable wins).
+# tba_key_file = "C:/Users/me/tba_key.txt"
+
+# Optional: also copy every clip into <deliver_dir>/<tag>/, e.g. a OneDrive or Google Drive folder shared with
+# drive team. Clips appear there only when complete.
+# deliver_dir = "C:/Users/me/OneDrive/StreamSplitter"
+
+# Optional, in the [event] section the setup writes: while recording, StreamSplitter searches YouTube's live videos
+# every 5 minutes for a stream of the event that is on no list (a team's own stream, say) and records it instead of
+# a Twitch stream once its picture shows the event's team numbers. To turn that search off:
+# [event]
+# find_streams = false
+
+# The setup adds [event], [slack], [youtube], [drive], [wiki] and [notify] sections; see docs/publish-design.md,
+# docs/setup-drive.md for [drive] (folder_id and the event folder are made by the setup: StreamSplitter can only upload
+# into folders it made; height = 720, 540 or 0 for as recorded; name_format; paused), and docs/setup-wiki.md for
+# [wiki] (api_url, username, private, embed_format, page_format, page_title). [listen] is Start from Slack on this
+# computer (docs/start-from-slack.md): enabled, mode = "background" or "window", users and user_names (the people
+# besides the alerts contact, added and removed from Slack with add @name / remove @name), alarm (default true in
+# background, false in window), keep_awake (default true).

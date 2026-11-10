@@ -1,0 +1,32 @@
+# Local settings hold key paths and the data folder; never commit.
+config.toml
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+# Recordings, chunks and clips live in the data folder (outside the repo), but guard against strays.
+data/
+*.ts
+*.mp4
+*.part
+logs/
+# The research repo this sits in ignores *.npz, *.npy and tools/; the season files and the launcher ship with the code.
+!streamsplitter/seasons/**
+!tools/
+
+# the setup wizard's fallback secret store (tokens, keys)
+secrets.json
+secrets.tmp
+
+# the bundled test clip ships with the code; uv lives in .tools when the installer had to fetch it
+!streamsplitter/assets/*.mp4
+.tools/
+
+# release zips (tools/package.py)
+dist/
+
+# stray temp files, tool caches, a key kept in a file
+tmp*.tmp
+.pytest_cache/
+.ruff_cache/
+tba_key.txt

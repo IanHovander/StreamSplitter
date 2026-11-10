@@ -1,0 +1,11 @@
+{
+ "_about": "By-eye verdicts on TBA matches the time join cannot place (truth.py 'in_gap'), and other truth facts. present = the whole match is in the video; partial = only part of it is; absent = not in the video at all. Frame sheets: <data>/phase0/truth_pictures/.",
+ "D1": {
+  "_pins": [
+   {"found_near": 26121, "key": "2026cancmp_qm82", "why": "scoreboard title 'Qualification 82 of 120' at 26180", "checked": "2026-11-04 crop sheet truth_pictures/D1_pins_after_drop.png"},
+   {"found_near": 26591, "key": "2026cancmp_qm83", "why": "scoreboard title 'Qualification 83 of 120' at 26650", "checked": "2026-11-04 crop sheet truth_pictures/D1_pins_after_drop.png"}
+  ],
+  "2026cancmp_qm81": {"verdict": "absent", "why": "stream drop: video shows qm81 set up at 0:20 until ~25990, then qm82's pre-match from 26020; qm81 itself never appears", "checked": "2026-11-04 frames 25540-26110 every 30 s"},
+  "2026cancmp_qm84": {"verdict": "partial", "why": "stream drop after qm83's results (26850); the video resumes at 26875 with qm84's clock at 1:02 left", "checked": "2026-11-04 frames 26750-27100 every 25 s"}
+ }
+}

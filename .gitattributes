@@ -1,0 +1,3 @@
+*.bat eol=crlf
+*.sh eol=lf
+*.mp4 binary

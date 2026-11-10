@@ -1,0 +1,44 @@
+[project]
+name = "streamsplitter"
+version = "0.2.0"
+description = "Record an FRC event live stream and save each match as its own clip."
+requires-python = ">=3.11"
+# Light: what the setup wizard and publishing need. It installs in seconds, so run.bat / run.sh can start the wizard
+# at once; the wizard installs the heavy `detect` extra (and Deno) in the background while it asks its questions.
+dependencies = [
+    "yt-dlp[default]",      # [default] adds yt-dlp-ejs, the YouTube challenge scripts matching this yt-dlp
+    "requests",
+    "tomli-w",              # the setup wizard writes config.toml
+    "keyring",              # tokens and keys go to the OS credential store
+    "slack_sdk>=3.33",      # publish/slack.py
+    "google-auth>=2.30",    # publish/youtube.py (OAuth for an installed app)
+    "google-auth-oauthlib>=1.2",
+    "cryptography>=42",     # the team settings file (teamkit.py); google-auth needs it anyway
+    "tzdata",               # the event's own time zone for the 08:00 notice (Windows has no time zone database)
+]
+
+[project.optional-dependencies]
+# Heavy (~150 MB): match detection, needed by `streamsplitter live`. A dev setup: pip install -e ".[detect,dev]"
+detect = [
+    "numpy",
+    "opencv-python-headless",
+    "rapidocr>=3.10",       # overlay timer, title and team numbers (detect/overlay.py)
+    "onnxruntime>=1.20",
+]
+# The JavaScript runtime yt-dlp recommends for YouTube (Deno's official wheels, ~40 MB; deno lands in the venv's
+# scripts folder). Live HLS records without one, but yt-dlp warns and normal YouTube videos need it.
+deno = ["deno>=2.3"]
+dev = ["pytest"]
+
+[project.scripts]
+streamsplitter = "streamsplitter.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["streamsplitter*"]
+
+[tool.setuptools.package-data]
+streamsplitter = ["seasons/**/*", "assets/*", "publish/*.json"]
