@@ -61,4 +61,5 @@ unlisted by default, and The Blue Alliance links are off unless you turn them on
 | Changing the code | [docs/code-map.md](docs/code-map.md) |
 
 Windows is tested at events, Linux in the tests, macOS not at all. Built by FRC Team 5026 with AI coding
-assistants. License: [MIT](LICENSE).
+assistants. License: [MIT](LICENSE); the bundled sample video and field sounds are not covered, see
+[NOTICE](NOTICE).

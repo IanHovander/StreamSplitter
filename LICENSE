@@ -18,8 +18,3 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OF THE SOFTWARE.
-
-The license covers the code and the documents. It does not cover the sample
-match video in streamsplitter/assets/ or the sound and picture references in
-streamsplitter/seasons/, which come from FRC event webcasts and are included
-only so the setup's test upload and the tests can run.

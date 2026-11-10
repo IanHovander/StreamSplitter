@@ -14,8 +14,8 @@ import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-FILES = ["README.md", "START-HERE.md", "AGENTS.md", "CLAUDE.md", "LICENSE", "run.bat", "run.sh", "pyproject.toml",
-         "config.example.toml"]
+FILES = ["README.md", "START-HERE.md", "AGENTS.md", "CLAUDE.md", "LICENSE", "NOTICE", "run.bat", "run.sh",
+         "pyproject.toml", "config.example.toml"]
 TREES = ["streamsplitter", "docs"]
 SKIP_DIRS = {"__pycache__", ".pytest_cache"}
 SKIP_SUFFIXES = {".pyc", ".pyo", ".tmp", ".part", ".bak"}

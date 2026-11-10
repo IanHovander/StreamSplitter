@@ -1,0 +1,6 @@
+The MIT license in LICENSE covers the code and the documents.
+
+It does not cover the sample match video in streamsplitter/assets/ or the
+sound and picture references in streamsplitter/seasons/. These come from FRC
+event webcasts and are included only so the setup's test upload and the tests
+can run.
